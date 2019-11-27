@@ -42,8 +42,8 @@ def total_gross(source)
   names_list = list_of_directors(source)
   
   director_index = 0
-  while director_index < list_of_directors.size do
-    director_name = list_of_directors[director_index]
+  while director_index < names_list.size do
+    director_name = names_list[director_index]
     total += dir_totals_hash[director_name]
     director_index += 1
   end
